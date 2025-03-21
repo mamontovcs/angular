@@ -1,0 +1,7 @@
+<div id="users">
+    <ul>
+        @for (user of users; track $index) {
+        <app-user [isSelected]="user.id === selectedUserId" (selectedUser)="onSelectUser($event)" [user]="user"></app-user>
+        }
+    </ul>
+</div>
