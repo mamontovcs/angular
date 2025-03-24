@@ -1,11 +1,9 @@
 import { Component, input, output, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { ITask } from '../../../models/task';
 import { Task } from '../../../models/task-model';
-import { M } from '@angular/cdk/keycodes';
 
 @Component({
-  imports: [FormsModule],
+  standalone: false,
   templateUrl: './add-task.component.html',
   styleUrl: './add-task.component.css'
 })

@@ -1,17 +1,15 @@
-import { Component, computed, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { UserService } from '../../services/user.service';
 import { User } from '../../models/user';
-import { TaskComponent } from "./task/task.component";
 import { ITask } from '../../models/task';
-import { DUMMY_TASKS } from '../../dummy-tasks';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { TasksService } from '../../services/tasks.service';
 
 @Component({
   selector: 'app-tasks',
-  imports: [TaskComponent, AddTaskComponent],
+  standalone: false,
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })
