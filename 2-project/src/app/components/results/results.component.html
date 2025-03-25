@@ -1,0 +1,30 @@
+@if (investmentResults()?.length == 0){
+<p class="center">Please, enter some data.</p>
+}
+@else{
+
+<table>
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Initial investment</th>
+            <th>Annual investment</th>
+            <th>Interest (Year)</th>
+            <th>Total Interest</th>
+            <th>Invested Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(result of investmentResults(); track result.year){
+        <tr>
+            <td>{{result.year}}</td>
+            <td>{{result.interest | currency}}</td>
+            <td>{{result.annualInvestment | currency}}</td>
+            <td>{{result.valueEndOfYear | currency}}</td>
+            <td>{{result.totalInterest | currency}}</td>
+            <td>{{result.totalAmountInvested | currency}}</td>
+        </tr>
+        }
+    </tbody>
+</table>
+}
