@@ -1,0 +1,16 @@
+<main>
+    <div id="dashboard">
+        <app-dashboard-item headerText="Server status" [imageData]="{source: 'status.png', alt: 'A signal icon'}">
+            <app-server-status />
+        </app-dashboard-item>
+
+        <app-dashboard-item headerText="Traffic" [imageData]="{source: 'globe.png', alt: 'A globe'}">
+            <app-traffic />
+        </app-dashboard-item>
+
+
+        <app-dashboard-item headerText="Tickets" [imageData]="{source: 'list.png', alt: 'A list of items'}">
+            <app-tickets />
+        </app-dashboard-item>
+    </div>
+</main>
