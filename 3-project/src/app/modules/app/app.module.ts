@@ -8,6 +8,8 @@ import { TrafficComponent } from '../../components/dashboard/traffic/traffic.com
 import { DashboardComponent } from "../../components/dashboard/dashboard.component";
 import { DashboardItemComponent } from '../../components/dashboard/dashboard-item/dashboard-item.component';
 import { NewTicketComponent } from '../../components/new-ticket/new-ticket.component';
+import { ButtonComponent } from "../../shared/button/button.component";
+import { ControlComponent } from "../../shared/control/control.component";
 
 @NgModule({
   declarations:
@@ -23,8 +25,10 @@ import { NewTicketComponent } from '../../components/new-ticket/new-ticket.compo
       NewTicketComponent
     ],
   imports: [
-    BrowserModule
-  ],
+    BrowserModule,
+    ButtonComponent,
+    ControlComponent
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
