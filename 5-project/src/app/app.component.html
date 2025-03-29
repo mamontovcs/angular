@@ -1,0 +1,11 @@
+<main>
+  <app-learning-resources />
+
+  <hr />
+
+  <app-auth />
+
+    <p *appAuth="'admin'" class="protected-content admin">Admin only paragraph</p>
+    <p *appAuth="'user'" class="protected-content user">User only paragraph</p>
+    <p *appAuth="'guest'" class="protected-content guest">Gurst only paragraph</p>
+</main>
